@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Kontakta oss</title>
+    <title>Startsida</title>
 </head>
 <body>
     <h1 id="top" >Länkar (Anchor)</h1>
@@ -13,9 +13,12 @@
     <a href="om.html"> Om oss</a>
     <br>
     <hr>
-    <h2>Absoluta länkar</h2>
+    <a href="#absolute">Absoluta länkar</a>
+    <a href="#relative">Relativa länkar</a>
+
+    <h2 id="absolute">Absoluta länkar</h2>
     <p>Absoluta länkar används för att länka till externa resurser!</p>
-    <h3>Länk till webbkurs</h3>
+    <h3>Länk till webbresurs</h3>
     <a href="http://www.w3sckools.com" target="_blank">Till W3Schools</a>
 
     <h3>Länkar till bilder</h3>
@@ -23,15 +26,20 @@
             Tim Berners-Lee bild
     </a>
 
-    <h2>Relativa länkar</h2>
+    <h2 id="relative">Relativa länkar</h2>
     <h3>Att länka till filer som finns i en annan mapp</h3>
     <a href="../Ugnsstekt laxsida.html" target="blank">Listor exempel</a>
 
     <h2>Lista med länkar</h2>
     <ul type="none">
         <li>
-    <a href="http://www.w3sckools.com" target="_blank">Till W3Schools</a>
-            <a href=""></a>
+            <a href="http://www.w3sckools.com">W3Schools</a>            
+        </li>
+        <li>
+            <a href="http://www.w3sckools.com">W3Schools</a> 
+        </li>
+        <li>
+            <a href="http://www.w3sckools.com">W3Schools</a> 
         </li>
     </ul>
 
