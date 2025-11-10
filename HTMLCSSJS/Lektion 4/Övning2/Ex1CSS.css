@@ -1,0 +1,25 @@
+.hamburger-meny {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: 2.5rem;
+    width: 2.5rem;
+    cursor: pointer; /*pekfinger*/
+}
+.hamburger-meny .bar {
+    height: 5px;
+    background-color: orange;
+    border-radius: 5px;
+    margin: 3px 0px;
+    transform-origin:  left;
+    transition: all 0.5s;
+}
+.hamburger-meny:hover .top {
+    transform: rotate(45deg);
+}
+.hamburger-meny:hover .middle {
+    opacity: 0;
+}
+.hamburger-meny:hover .bottom {
+    transform: rotate(-45deg);
+}
