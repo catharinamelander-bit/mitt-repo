@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a class="skip link" href="#main">Hoppa till innehåll</a>
+    <header role="banner">
+        <div class="container">
+            <h1 id="site-title">Min musik</h1>
+            <nav aria-label="Huvudnavigering">
+                <button id="menu-toggle" aria-expanded="false" aria-controls="main-menu">Meny</button>
+                <ul id="main-menu">
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="artister.html">Artister</a>/li>
+                    <li><a href="låtar.html">Låtar</a>/li>
+                    <li><a href="kontakt.html">Kontakt</a>/li>  
+                </ul>           
+             </nav>
+        </div>
+    </header>
+
+    <main id="main" class="continer" role="main">
+        <header>
+            <h2>Välkommen till Min Musikwebbplats</h2>
+            <p class="lead">Upptäck ny musik och dina favoritartister!</p>
+        </header>
+
+        <section aria-labelledby="features-heading">
+            <h3 id="features-heading">Snabböversikt</h3>
+            <ul>
+                <li>Utforska nya artister och låtar</li>
+                <li>Skapa och dela spellistor</li>
+                <li>Få rekommendationer baserade på din smak</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="gallery-heading">
+            <h3 id="gallery-heading">Bild</h3>
+            <figure>
+                <img src="Musik2.jpg" alt="">
+                <figcaption>Toner blir musik</figcaption>
+            </figure>
+        </section>
+
+        <section aria-labelledby="video-heading">
+            <h3 id="video-heading">Video</h3>
+            <p>Se världens bästa musikvideo genom tiderna</p>
+             <div class="video-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/watch?v=4V90AmXnguw&list=RD4V90AmXnguw&start_radio=1" frameborder="0"></iframe>
+             </div>
+        </section>
+
+        <section aria-labelledby="table-heading">
+            <h3 id="table-heading">Topplista</h3>
+            <table>
+                <caption>Veckans topplista</caption>
+                <thead>
+                    <tr>
+                        <th>Position</th>
+                        <th>Låt</th>
+                        <th>Artist</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Blinding Lights</td>
+                        <td>The Weeknd</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Watermelon Sugar</td>
+                        <td>Harry Styles</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Levitating</td>
+                        <td>Dua Lipa</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section aria-labelledby="download-heading">
+            <h3 id="download-heading">Ladda ner veckans 1:a</h3>
+            <p>Klicka på länken nedan för att ladda ner "Blinding Lights" av The Weeknd:</p>
+            <a href="downloads/Blinding_Lights.mp3" download>Ladda ner Blinding Lights</a>
+            
+        </section>
+
+        <section aria-labelledby="signup-heading">
+            <h3 id="signup-heading">Anmäl dig till nyhetsbrev</h3>
+            <form id="Signup-form" action="#" method="post" novalidate aria-describedby="signup-desc">
+                <p id="signup-desc">Få de senaste uppdateringarna om nya låtar och artister direkt i din inkorg.</p>
+                <label for="fnamn">Förnamn</label>
+                <input type="text" id="fnamn" name="fnamn" required aria-required="true">
+
+                <label for="lname">Efternamn</label>
+                <input type="text" id="lname" name="lname">
+
+                <label for="email">E-post:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Anmäl dig här</button>
+            </form>
+        </section>
+
+        <section aria-labelledby="map-heading">
+            <h3 id="map-heading">Karta (Google Maps API)</h3>
+            <p>Min stad</p>
+            <div id="map" role="application" aria-label="Karta" tabindex="0" style="min-height: 300px;"></div>
+            <noscript>
+                <p>Kartfunktinen kräver JavaScript. Du kan öppna platsen i Google Maps: <a href="https://www.google.com/maps/">Öppna Google Maps</a>/p>
+            </noscript>
+        </section>
+        
+        <div style="width:100%;max-width: 900px;margin: 0 auto;">
+            <iframe 
+            title="Hudiksvalls karta"
+            width="100%"
+            height="480"
+            style="border:0;"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD-YourAPIKeyHere-XXXXXX&q=Hudiksvall,Sweden">
+        </div>
+
+            
+        }
+        <section>
+            <h3>Snabblänkar</h3>
+            nav aria-label="Snabblänkar">
+                <ul>
+                    <li><a href="#features-heading">Snabböversikt</a></li>
+                    <li><a href="#gallery-heading">Bild</a></li>
+                    <li><a href="#video-heading">Video</a></li>
+                    <li><a href="#table-heading">Topplista</a></li>
+                    <li><a href="#download-heading">Ladda ner veckans 1:a</a></li>
+                    <li><a href="#signup-heading">Anmäl dig till nyhetsbrev</a></li>
+                    <li><a href="#map-heading">Karta</a></li>
+                </ul>
+        </section>
+
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2024 Min Musikwebbplats. Alla rättigheter förbehållna. <a href="Kontakt.html">Kontakt</a></p>
+        </div>
+        </footer>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Startsida</a></li>
+                <li><a href="om-mig.html">Om mig</a></li>
+                <li><a href="kontakta-mig.html">Kontakta mig</a></li>
+            </ul>
+        </nav>
+    
+</body>
+</html>

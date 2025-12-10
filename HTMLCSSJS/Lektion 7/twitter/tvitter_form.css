@@ -1,0 +1,20 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap%27
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: Poppins;
+    background: #ecf0f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.brand-logo {
+    height: 100px;
+    width: 100px;
+    background: url("https://img.icons8.com/color/100/000000/twitter--v2.png");
+    margin: auto;
+
+
+}
